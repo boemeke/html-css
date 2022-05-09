@@ -1,0 +1,99 @@
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 5%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+
+    color: white;
+    letter-spacing: .04em;
+}
+
+.container {
+    width: 700px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    margin: 5%;
+}
+.posição{ 
+    left: 245px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 12 px 0;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+
+    color: #fff;
+    border: 1px solid blueviolet;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 100%;
+
+    position: absolute;
+
+    background: blueviolet;
+    z-index: -1;
+    transition: all .2s;
+}
+
+.item1::before {
+    width: 0;
+
+    top: 0;
+    left: 0%;
+}
+
+.item1:hover::before {
+    width: 100%;
+}
+
+.item2::before {
+   
+    bottom: 100;
+
+}
+.item2:hover::before {
+    bottom: 0;
+}
+.item3::before {
+    width: 0;
+
+    top: 0;
+    right: 0%;
+}
+
+.item3:hover::before {
+    width: 100%;
+}
+.item4::before {
+   
+    top: 100%;
+
+}
+.item4:hover::before {
+    top: 0;
+}

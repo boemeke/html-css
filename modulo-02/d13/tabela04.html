@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 04</title>
+    <!-- link css style -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: #323232;
+        }
+        table{
+            border-collapse: collapse; 
+            cursor: pointer;
+        }
+        td, th {
+           border: 2px solid black;
+           padding: 10px;
+        }
+        th{
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .media{
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .center{
+            text-align: center;
+            font-weight: bold;
+        }
+        .center:hover{
+            background-color: rgb(90, 197, 75);
+            transition: .5s;
+        }
+        .disciplinas:hover{
+            background-color: rgb(63, 164, 231);
+            transition: .5s;
+        }   
+        .areas:hover{
+            background-color: rgb(189, 202, 10);
+            transition: .5s;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Execicios de Tabelas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" class="areas">Exatas</td>
+                <td class="disciplinas">Matemática</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                
+            </tr>
+            <tr>
+                <td class="disciplinas">Física</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+            </tr>
+            <tr>
+                <td class="disciplinas">Química</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+            </tr>
+            <tr>
+                <td class="disciplinas">Biologia</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+            </tr>
+            <thead>
+                <tr class="media">
+                    <td colspan="4">Media de Exatas</td>
+                    <td class="center">0.0</td>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="4" class="areas">Humanas</td>
+                <td class="disciplinas">Historia</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+            </tr>
+            <tr>
+                <td class="disciplinas">Geografia</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+                <td class="center">0.0</td>
+            </tr>
+            <thead>
+                <tr class="media">
+                    <td colspan="4">Media de Humanas</td>
+                    <td class="center">0.0</td>
+                </tr>
+            </thead>
+        </tbody>
+    </table>
+    <H1 class="title">Hover Effects</H1>
+    <div class="container">
+        <a class="button item1">Button 1</a>
+        <a class="button item2">Button 2</a>
+        <a class="button item3">Button 3</a>
+        <a class="button item4 posição">Button 4</a>
+    </div>
+</body>
+</html>
