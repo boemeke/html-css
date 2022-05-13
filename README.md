@@ -5,4 +5,4 @@
 
  Abaixo Alguns sites que ja foram criado para estudos e que estao sendo criados.
 
- <a href= https://github.com/boemeke/Projeto-Curriculo-online/blob/main/HTML-CSS/index.html>
+ <a href= https://github.com/boemeke/Projeto-Curriculo-online/blob/main/HTML-CSS/index.html> Link para o Curriculo Online (em construção)</a>
