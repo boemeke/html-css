@@ -25,9 +25,9 @@
 
     margin: 5%;
 }
-.posição{ 
+/* .posição{ 
     left: 245px;
-}
+} */
 .button {
     display: flex;
     justify-content: center;
@@ -57,38 +57,44 @@
 
     background: blueviolet;
     z-index: -1;
-    transition: all .2s;
+    transition: all .3s;    
 }
 
 .item1::before {
+
     width: 0;
 
     top: 0;
-    left: 0%;
+    left: 0;
 }
 
 .item1:hover::before {
+
     width: 100%;
 }
 
 .item2::before {
    
-    bottom: 100;
+    bottom: 100%;
 
 }
 .item2:hover::before {
+
     bottom: 0;
+
 }
+
 .item3::before {
     width: 0;
 
     top: 0;
-    right: 0%;
+    right: 0;
 }
 
 .item3:hover::before {
     width: 100%;
 }
+
 .item4::before {
    
     top: 100%;
